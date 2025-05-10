@@ -1,6 +1,10 @@
 'use client'
+interface SearchFilterProps {
+  searchTerm: string;
+  setSearchTerm: (value: string) => void;
+}
 
-export default function SearchFilter({ searchTerm, setSearchTerm }) {
+export default function SearchFilter({ searchTerm, setSearchTerm }: SearchFilterProps) {
   return (
     <input
       type="text"
